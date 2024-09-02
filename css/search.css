@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100vw;
+}
+
+.header .main {
+    display: flex;
+    padding: 18px 75px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .main .company-logo img {
+    height: 27px;
+}
+
+.header .main .menu {
+    display: flex;
+    gap: 40px;
+}
+
+.header .main .menu a {
+    display: block;
+    padding: 16px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.header .main .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.header .main .actions .currency_selector,
+.header .main .actions .profile {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgba(15, 7, 55, 0.2)
+}
+
+
+
+.header .main .actions .currency_selector .country_logo {
+    height: 30px;
+    width: 30px;
+}
+
+.header .main .actions .currency_selector>img {
+    height: 10px;
+}
+
+.header .main .actions .profile .profile_image {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.header .subheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 75px;
+    border: 1px solid rgba(15, 7, 55, 0.2)
+}
+
+.header .subheader .lhs,
+.header .subheader .rhs {
+    display: flex;
+    gap: 16px;
+}
+
+.filter_button {
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(15, 7, 55, 0.2)
+}
+
+.filter_button .icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.filter_button .icon img {
+    width: 100%;
+}
+
+.filter_button p {
+    margin: 0 10px 0 0;
+}
+
+.filter_button .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 50px;
+    background-color: rgb(183, 183, 183);
+}
