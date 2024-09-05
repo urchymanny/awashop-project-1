@@ -1,5 +1,18 @@
-body {
+/* global reset */
+* {
     margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-blue: #0F0737
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .header {
@@ -106,4 +119,152 @@ body {
     padding: 4px;
     border-radius: 50px;
     background-color: rgb(183, 183, 183);
+}
+
+.grid-12 {
+    width: calc(100vw - (75px + 75px));
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.results {
+    margin-top: 30px;
+    /* row-gap: 15px; */
+    /* column-gap: 30px; */
+}
+
+.results .item {
+    grid-column: span 3;
+    background-color: #fff;
+    border-radius: 16px;
+    color: #697880;
+    font-size: 12px;
+    /* overflow: hidden; */
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.results .item .hotel_image {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.results .item .info,
+.results .item .info .top_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.results .item .info {
+    gap: 16px;
+    padding: 16px;
+
+}
+
+.results .item .info .top_info {
+    gap: 8px;
+}
+
+.results .item .info .top_info .name_location_rating .name_location .hotel_name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.results .item .info .top_info .name_location_rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.results .item .info .top_info .description p {
+    /* height: 36px; */
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.results .item .info .pricing_distance {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results .item .info .pricing_distance .distance {
+    padding: 8px;
+    background: rgba(161, 172, 179, 0.10);
+    border-radius: 24px;
+}
+
+.results .item .info .pricing_distance .pricing .bold {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--dark-blue)
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 64px 0;
+}
+
+footer .marketing {
+    grid-column: span 4;
+}
+
+footer .company,
+footer .customers {
+    grid-column: span 2;
+}
+
+footer .social {
+    grid-column: span 3;
+    grid-column-end: 13;
+    gap: 8px
+}
+
+footer .social .links {
+    gap: 14px
+}
+
+footer .social .links .link_item {
+    padding: 8px;
+    background: rgba(161, 172, 179, 0.9);
+    border-radius: 8px;
+}
+
+footer .social .summary {
+    padding: 14px;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(15, 7, 55, 0.10);
+}
+
+footer .social .summary .top {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social .summary .top .profile {
+    align-items: center;
+    gap: 8px;
+}
+
+footer .social .summary .top .profile .logo {
+    width: 31px;
+    height: 31px;
+    background-color: var(--dark-blue);
 }
